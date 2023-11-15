@@ -1,0 +1,41 @@
+GET http://localhost:5000/womanMarathon
+
+
+###
+
+GET http://localhost:5000/womanMarathon/65550684d70796079bdbe426
+
+###
+
+PATCH  http://localhost:5000/womanMarathon/65550684d70796079bdbe426
+Content-Type: application/json
+
+{
+     "fullName" : "Test 1",
+    "Nationality" : "Test 1", 
+    "Date" : "Test 1", 
+    "Time" : "Test 1", 
+    "Event" : "Test 1", 
+    "Source" : "Test 1", 
+    "Notes" : "No notes"
+}
+
+###
+
+DELETE http://localhost:5000/womanMarathon/6555068bd70796079bdbe429
+
+###
+
+POST  http://localhost:5000/womanMarathon/add
+Content-Type: application/json
+
+{
+    "fullName" : "Test 1",
+    "Nationality" : "Test 1", 
+    "Date" : "Test 1", 
+    "Time" : "Test 1", 
+    "Event" : "Test 1", 
+    "Source" : "Test 1", 
+    "Notes" : "Test 1"
+}
+
