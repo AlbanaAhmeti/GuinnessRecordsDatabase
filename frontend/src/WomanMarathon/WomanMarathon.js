@@ -1,6 +1,9 @@
-import { useState , useEffect } from "react"
-import { getAll } from "./services/womanMarathon"
-import './womenM.css';
+import { useState , useEffect } from "react";
+import { getAll } from "../services/womanMarathon";
+import { Link } from 'react-router-dom';
+import "../css/womenM.css";
+import DeleteWomanMarathon from "./DeleteWomanMarathon";
+
 const WomanMarathon = ()=> {
     const [participants, setParticipants] = useState([])
     const [error, setError] = useState(null)
@@ -15,7 +18,7 @@ const WomanMarathon = ()=> {
 
     const getParticipants = (participant) => {
         return (
-            <tr>
+            <tr key={participant._id}>
                 <td>{participant.fullName}</td>
                 <td>{participant.Nationality}</td>
                 <td>{participant.Date}</td>
@@ -23,6 +26,12 @@ const WomanMarathon = ()=> {
                 <td>{participant.Event}</td>
                 <td>{participant.Source}</td>
                 <td>{participant.Notes}</td>
+                <td>
+                    <button type="button" className="editButton btn btn-info">
+                        <Link to={`/womanMarathon/${participant._id}`}><p>Edit</p></Link>
+                    </button>
+                    <DeleteWomanMarathon id={participant._id} />
+                </td>  
             </tr>                 
         )
     }
@@ -32,8 +41,8 @@ const WomanMarathon = ()=> {
             <div className="title">
                 <h4>Marathon Records for Women</h4>
             </div>
-            <table class="table table-hover">
-                <thead class="thead-light" style={{"background-color": "#5F9EA0"}}>
+            <table className="table table-hover">
+                <thead  style={{backgroundColor: "#5F9EA0"}}>
                     <tr>
                         <th scope="col">Full Name</th>
                         <th scope="col">Nationality</th>
@@ -42,6 +51,7 @@ const WomanMarathon = ()=> {
                         <th scope="col">Event/Place</th>
                         <th scope="col">Source</th>
                         <th scope="col">Notes</th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
