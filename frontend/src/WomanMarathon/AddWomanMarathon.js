@@ -57,7 +57,9 @@ const handleSubmit = async (e) => {
                   placeholder="Full Name"
                   name="fullName"
                   value={name}
-                  onChange={(e) => setName(e.target.value)} />
+                  onChange={(e) => setName(e.target.value)} 
+                  required
+                  />
               </div>
           </div>
           <div className="form-group row">
@@ -69,7 +71,9 @@ const handleSubmit = async (e) => {
                   placeholder="Nationality"
                   name="Nationality"
                   value={nationality}
-                  onChange={(e) => setNationality(e.target.value)} />
+                  onChange={(e) => setNationality(e.target.value)} 
+                  required
+                  />
                 </div>
            </div>
            <div className="form-group row">
@@ -81,7 +85,9 @@ const handleSubmit = async (e) => {
                   placeholder="Date"
                   name="Date"
                   value={date}
-                  onChange={(e) => setDate(e.target.value)} />
+                  onChange={(e) => setDate(e.target.value)} 
+                  required
+                  />
               </div>
           </div>
           <div className="form-group row">
@@ -93,7 +99,9 @@ const handleSubmit = async (e) => {
                   placeholder="Time"
                   name="Time"
                   value={time}
-                  onChange={(e) => setTime(e.target.value)} />
+                  onChange={(e) => setTime(e.target.value)} 
+                  required
+                  />
               </div>
           </div>
           <div className="form-group row">
@@ -105,7 +113,9 @@ const handleSubmit = async (e) => {
                   placeholder="Event/Place"
                   name="Event"
                   value={event}
-                  onChange={(e) => setEvent(e.target.value)} />
+                  onChange={(e) => setEvent(e.target.value)} 
+                  required
+                  />
               </div>
           </div>
           <div className="form-group row">
@@ -117,7 +127,9 @@ const handleSubmit = async (e) => {
                   placeholder="Source"
                   name="Source"
                   value={source}
-                  onChange={(e) => setSource(e.target.value)} />
+                  onChange={(e) => setSource(e.target.value)} 
+                  required
+                  />
               </div>
           </div>
           <div className="form-group row">
@@ -130,7 +142,8 @@ const handleSubmit = async (e) => {
                    placeholder="Notes"
                    name="Notes"
                    value={notes}
-                   onChange={(e) => setNotes(e.target.value)} />
+                   onChange={(e) => setNotes(e.target.value)} 
+                   />
               </div>
           </div>
            <div className="form-group row">

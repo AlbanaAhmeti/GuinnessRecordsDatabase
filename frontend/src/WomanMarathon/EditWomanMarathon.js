@@ -51,7 +51,9 @@ const EditWomanMarathon = () => {
                       placeholder="Full Name"
                       name="fullName"
                       value={participant?.fullName || ""}
-                      onChange={(e) => setParticipant({...participant, fullName: e.target.value})} />
+                      onChange={(e) => setParticipant({...participant, fullName: e.target.value})} 
+                      required
+                      />
                   </div>
               </div>
               <div className="form-group row">
@@ -63,7 +65,9 @@ const EditWomanMarathon = () => {
                       placeholder="Nationality"
                       name="Nationality"
                       value={participant?.Nationality || ""}
-                      onChange={(e) => setParticipant({...participant, Nationality: e.target.value})} />
+                      onChange={(e) => setParticipant({...participant, Nationality: e.target.value})} 
+                      required
+                      />
                     </div>
                </div>
                <div className="form-group row">
@@ -75,7 +79,9 @@ const EditWomanMarathon = () => {
                       placeholder="Date"
                       name="Date"
                       value={participant?.Date || ""}
-                      onChange={(e) => setParticipant({...participant, Date: e.target.value})} />
+                      onChange={(e) => setParticipant({...participant, Date: e.target.value})} 
+                      required
+                      />
                   </div>
               </div>
               <div className="form-group row">
@@ -87,7 +93,9 @@ const EditWomanMarathon = () => {
                       placeholder="Time"
                       name="Time"
                       value={participant?.Time || ""}
-                      onChange={(e) => setParticipant({...participant, Time: e.target.value})} />
+                      onChange={(e) => setParticipant({...participant, Time: e.target.value})} 
+                      required
+                      />
                   </div>
               </div>
               <div className="form-group row">
@@ -99,7 +107,9 @@ const EditWomanMarathon = () => {
                       placeholder="Event/Place"
                       name="Event"
                       value={participant?.Event || ""}
-                      onChange={(e) => setParticipant({...participant, Event: e.target.value})} />
+                      onChange={(e) => setParticipant({...participant, Event: e.target.value})} 
+                      required
+                      />
                   </div>
               </div>
               <div className="form-group row">
@@ -111,7 +121,9 @@ const EditWomanMarathon = () => {
                       placeholder="Source"
                       name="Source"
                       value={participant?.Source || ""}
-                      onChange={(e) => setParticipant({...participant, Source: e.target.value})} />
+                      onChange={(e) => setParticipant({...participant, Source: e.target.value})} 
+                      required
+                      />
                   </div>
               </div>
               <div className="form-group row">
